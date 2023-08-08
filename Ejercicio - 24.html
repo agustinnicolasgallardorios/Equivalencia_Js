@@ -1,0 +1,113 @@
+<html>
+
+    <head> 
+        <title> Calculadora </title> 
+    </head>
+
+
+    <body>
+
+      <div class="panel">
+       <p class="p1"> Insertar Numero 1 </p> 
+       <input type="text" class="value1" id="value1">
+       <p class="p2"> Insertar Numero 2 </p>
+       <input type="text" class="value2" id="value2">
+
+       <button onclick="calcular()" class="calcular"> Calcular </button>
+
+      </div>
+
+    </body>
+
+
+    <script>
+
+    function calcular(){
+      value1 = document.getElementById("value1").value;
+      value2 = document.getElementById("value2").value;
+
+      if (value1 == value2){
+        alert("los numeros son iguales");
+      } else if (value1 != value2){
+        alert("los numeros son distintos");
+      } else {
+        alert("inserte valor correcto");
+      }
+
+
+
+    }
+      
+
+
+
+    </script>
+
+
+    <style>
+
+      .panel{
+        margin-left: 450px;
+        margin-top: 200px;
+        border-radius: 120px;
+        height: 400px;
+        width: 400px;
+        background-color: azure;
+      }
+
+      .p1{
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 60px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;   
+      }
+
+      .p2{
+        position: absolute;
+        margin-top: 200px;
+        margin-left: 60px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;   
+      }
+
+
+      .value1{
+        position: absolute;
+        margin-top: 130px;
+        margin-left: 60px;
+        width: 200px;
+        height: 30px;
+        border-radius: 20px;
+        background-color: rgb(245, 245, 214);
+      }
+
+      .value2{
+        position: absolute;
+        margin-top: 230px;
+        margin-left: 60px;
+        width: 200px;
+        height: 30px;
+        border-radius: 20px;
+        background-color: rgb(245, 245, 214);
+      }
+
+      .calcular{
+        position: absolute;
+        margin-top: 300px;
+        margin-left: 60px;
+        width: 80px;
+        height: 40px;
+        font-size: 12px;
+        border-radius: 20px;
+        background-color: rgb(245, 245, 214);
+      }
+
+      .calcular:hover{
+        transition: 1s;
+        background-color: rgb(230, 230, 154);
+      }
+
+    </style>
+
+</html>
